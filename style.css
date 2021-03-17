@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Open Sans italic";
+    src: url(/PT_Sans_Italic/PTS56F.ttf),
+  }
+
+
+  @font-face {
+    font-family: "Open Sans italic";
+    src: url(/Open_Sans_Condensed_Light/OpenSans-CondLight.woff),
+  }
+
+  
+  
+  html{
+      height: 100vh;
+    
+  }
+
+
+.container{
+    width: 980px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 14px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+    
+   
+}
+/*header*/
+header{
+    height:min-content;
+    background: #dcdcdc;
+    display: flex; 
+    align-items: center; 
+    padding: 20px 0;
+    
+  
+}
+
+.phone{
+    font-family:"Open Sans - Condensed Light";
+    font-size: 40px;
+    color: #767676;
+    float: right;
+    line-height: 46px;
+    font-weight: 400px;
+ }
+ 
+
+header img{
+    float: left;
+}
+
+/*menu*/
+.menuu{
+    height: max-content;
+    background: #777777;
+    color: #fff;
+    font-size: 30px;
+    /*position: relative;
+    z-index: 10;*/
+    
+}
+
+
+.menu-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.menu-container ul li{
+    border-right: 2px solid #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.menu-container ul li:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.menu-container ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.menu-container ul a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+
+/*Slider*/
+.slider{
+    
+    background:#f8f8f8 ;
+}
+
+#slider_container{
+    max-width: 1248px;
+    margin: 0 auto;
+    overflow: hidden;
+    top: -50px;
+    margin-bottom: 0;
+    height: min-content;
+}
+
+
+.slider #sl{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    z-index: 5;
+}
+
+.button-slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    top: -300px;
+    margin: 0 70px;
+}
+
+/*breadcrumb*/
+
+.breadcrumb ul{
+    list-style: none;
+    font-size: 14px;
+    color: #767676;
+    display: inline-flex;
+    margin: 10px;
+
+} 
+.breadcrumb ul li{
+    
+    padding-right: 5px;
+}
+
+.breadcrumb ul li a{
+    border-bottom: 1px solid #767676
+}
+
+.breadcrumb ul li a.current{
+    border-bottom: none;
+}
+.breadcrumb ul li+li:before {
+    padding: 8px;
+    color: #767676;
+    content: "/\00a0";
+}
+
+
+.content{
+    display: flex;
+    width: 100%;
+    margin-top: 20px
+    
+
+}
+.leftblock{
+    background: red;
+    width: 20%;
+    margin-right: 20px;
+    
+   
+}
+.centerblock{
+    background: red;
+    width: 80%;
+    
+
+}
+.tovar{
+    display: grid;
+    width: 100%;
+    grid-template-rows: : 1fr 1fr 1fr
+    margin-bottom: 20px;
+}
+
+.card{
+    /* height: 250px; */
+    background: #6e6e6e;
+    width: 100%;
+}
+.photo{
+    margin: 20px;
+}
+.about-tovar{
+    font-size: 18px;
+}
+.tovar-buy{
+    display: flex;
+    justify-content: space-between;
+}
+.cina{
+    font-size: 28px;
+    font-weight: 700;
+
+
+}
+
+
+
+
+ /*Footer*/
+
+footer{
+    background: #777777;
+    margin-top: 200px;
+    color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.footer_left{
+    width: 35%;
+ }
+
+.footer_menu{
+    width: 25%;
+ }
+
+.footer_menu ul, .footer_right a{
+     list-style: none;
+     text-decoration: underline #d4d4d4;
+     color: #f5f5f5;
+     cursor: pointer;
+ }
+
+ 
+
+.footer_right{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+ }
+
+.footer_right img{
+     height: 38px;
+     margin-right: 10px;
+ }
+
+.footer_right a:hover{
+     cursor: pointer;
+ }
+
+
+

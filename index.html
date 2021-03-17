@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+    <title>Maket2</title>
+</head>
+<body>
+   <header>
+    <div class="container">
+        <img src="images/Название__компании_самая_клевая_компания.png" alt="logo">
+        <div class="phone">
+            <p>+7(499) 777-77-77</p>
+            <p>+7(499) 777-77-77</p>
+        </div>
+    </div>
+   </header>
+
+   <div class="menuu">
+        <div class="menu-container container">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="slider">
+        <div id="slider_container">
+            <img id="sl" src="" alt="">
+            <div class="button-slide">
+                <img id="previous" src="images/left.png" alt="left">
+                <img src="images/right.png" alt="right">
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a class="current" href="#">Бытовая техника</a></li>
+                </ul> 
+            </div>
+        <div class="content">
+            <div class="leftblock">
+                <p>dcfdvgfbgfb</p>
+            </div>
+            <div class="centerblock">
+                <div class="tovar">
+                    <div class="card">
+                        <img class="photo" src="images/nophoto.png" alt="photo">
+                        <p class="about-tovar">Самый клевый чайник, который надо купить!</p>
+                        <div class="tovar-buy">
+                            <p class="cina">1 900 p.</p>
+                            <a href="#"><img src="images/addtobasket_mini.png" alt=""></a>
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <img class="photo" src="images/nophoto.png" alt="photo">
+                        <p class="about-tovar">Самый клевый чайник, который надо купить!</p>
+                        <div class="tovar-buy">
+                            <p class="cina">1 900 p.</p>
+                            <a href="#"><img src="images/addtobasket_mini.png" alt=""></a>
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <img class="photo" src="images/nophoto.png" alt="photo">
+                        <p class="about-tovar">Самый клевый чайник, который надо купить!</p>
+                        <div class="tovar-buy">
+                            <p class="cina">1 900 p.</p>
+                            <a href="#"><img src="images/addtobasket_mini.png" alt=""></a>
+                        </div>   
+                    </div>
+                    <div class="card">
+                        <img class="photo" src="images/nophoto.png" alt="photo">
+                        <p class="about-tovar">Самый клевый чайник, который надо купить!</p>
+                        <div class="tovar-buy">
+                            <p class="cina">1 900 p.</p>
+                            <a href="#"><img src="images/addtobasket_mini.png" alt=""></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+
+    
+     
+
+    
+
+   
+
+
+
+   <footer>
+        <div class="container container_footer">
+            <div class="footer_left">
+                <p>&copy  2012–2013 ЗАО «Компания» </p>
+                <p>info@name.ru</p>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#"></a>Главная</li>
+                    <li><a href="#"></a>Каталог</li>
+                    <li><a href="#"></a>Доставка и оплата</li>
+                    <li><a href="#"></a>Прайс-лист</li>
+                    <li><a href="#"></a>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <img src="images/company.png" alt="company">
+                <p><a href="">Разработка сайта — </a><br>
+                    компания «Пиксель Плюс»</p>
+            </div>
+        </div>
+   </footer>
+</body>
+
+<script>
+    var images=['Слайд_1.png' , 'Слайд_2.png'];
+
+    var slider=document.querySelector('#slider_container');
+    var img=slider.querySelector('#sl');
+
+    var i=1;
+    img.src='images/' + images[0];
+    window.setInterval(function(){
+
+        sl.src='images/' + images[i];
+
+        i++;
+
+        if(i==images.length) {
+            i=0;
+        }
+    }, 2000);
+</script>
+</html>
